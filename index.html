@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="center--container">
+      <form>
+        <label for="gridSizeNumber">Enter Grid Size:</label>
+        <input
+          id="gridSizeNumber"
+          type="number"
+          name="gridSizeNumber"
+          placeholder="1-100"
+          value="1"
+          min="1"
+          max="100"
+          required
+        />
+        <button type="submit" id="button--generate">Generate new Grid</button>
+      </form>
+
+      <div class="grid--squares"></div>
+    </div>
+  </body>
+</html>
